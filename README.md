@@ -1,14 +1,11 @@
 18F Frontend Guild
 =======================================================
 
-##What
-
 18F is promoting team best practices across speciality areas through guilds. These guilds support their members in whatever way deemed most appropriate by those members themselves. This branch houses guild research into its membership needs.
 
 For the guild guide itself, the lastest version of our live online guide is in the `18f-pages` branch.
 
 For a roadmap of guild progress and goals, please see our [repository's wiki](https://github.com/18F/frontend/wiki).
-
 
 
 ### Public domain
