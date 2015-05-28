@@ -14,7 +14,7 @@ If this is all OK, we can begin.
 Goals | Questions
 :----- | :---------
 Do people have an understanding of what frontend is? | 1. In a few words, please describe what you consider frontend to be.
-How do people like to learn best frontend practices? | How do people like to learn best frontend practices?
+How do people like to learn best frontend practices? | 2. How do people like to learn best frontend practices?
 What do people do when they are stuck on a frontend problem? | 3. When you had frontend problem X, what do you do to solve it? What resources (online, people, books, etc) did you use?
 What frontend tools are people using? | 4. What was your frontend stack on Y project? This includes frameworks, libs, tools, fonts, etc.
 What do people care about most when building frontends? | 5. When building the frontend of project Y, what is most important for you?
@@ -24,7 +24,7 @@ Are people aware of the parts of front end development they are not doing? | 8. 
 What do people feel like needs to improve most with frontend code at 18f? | 9. What do you think are the most important things that are being missed on projects X/Y that you’d like to change?
 Where are teams having the most trouble on front end currently? | 10. What was the biggest challenge for frontend on project X? 
 Do people feel confidant about the CSS and JS they are coding? | 11. What’s the comfort level with the frontend code you are building?
-Would you be interested in attending workshops, presentations or question sessions on frontend coding? | When you had problem X on project Y, what sort of resources did you wish you had to solve it? What do you do, or would you like to do in an ideal world to improve your frontend skillset?
+Would you be interested in attending workshops, presentations or question sessions on frontend coding? | 12. When you had problem X on project Y, what sort of resources did you wish you had to solve it? What do you do, or would you like to do in an ideal world to improve your frontend skillset?
 
 
 ## Goodbye
