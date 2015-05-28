@@ -1,4 +1,4 @@
-# Front page user interview discussion guide 
+# Interview guide
 
 ## Intro
 
