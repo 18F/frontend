@@ -1,0 +1,13 @@
+{% for chapter in include.chapters %}{% if chapter.enabled != false %}
+<li class="group">
+  <a href="#{{ chapter.id }}">{{ chapter.title }}</a>
+  {% if chapter.children %}
+    <button class="expand-subnav"
+      aria-expanded="true"
+      aria-controls="nav-collapsible-{{ chapter.id }}">+</button>
+    <ol class="nav-children" id="nav-collapsible-{{ chapter.id }}" aria-hidden="false">
+      {% include loop-nav.html chapters=chapter.children %}
+    </ol>
+  {% endif %}
+</li>
+{% endif %}{% endfor %}
