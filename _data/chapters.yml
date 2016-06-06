@@ -87,7 +87,7 @@
 
         - id: javascript-dependencies
           file: js/dependencies
-          title: Depedencies
+          title: Dependencies
 
         - id: javascript-libraries
           file: js/libraries
