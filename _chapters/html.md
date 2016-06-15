@@ -7,15 +7,15 @@ Generally speaking, you should always follow the [W3C HTML5 standard].
 Always use the [HTML5 doctype], and place it before any other markup (usually
 the `<html>` element):
 
-  ```html
-  <!DOCTYPE html>
-  ```
+```html
+<!DOCTYPE html>
+```
 
 The lowercase variation is also valid:
 
-  ```html
-  <!doctype html>
-  ```
+```html
+<!doctype html>
+```
 
 > **Here's why:** The [DTD], or "doctype", tells browsers (and other programs
 > that read HTML) what to expect in your document. In some browsers, the
@@ -86,7 +86,7 @@ either include self-closing slashes (`<circle/>`) or closing tags
   > (note: this linked spec has been deprecated), but is no longer valid in
   > HTML5.
 
-1. Be sure to nest start and close tags properly:
+2. Be sure to nest start and close tags properly:
 
   ```html
     <section>
@@ -128,15 +128,15 @@ following exceptions:
    include the trailing slash:
 
   ```html
-    <svg>
+<svg>
 
-      <!-- if the closing tag were omitted, the following elements wouldn't render -->
-      <path d="M10,10h40v40h-40v-40Z"></path>
+  <!-- if the closing tag were omitted, the following elements wouldn't render -->
+  <path d="M10,10h40v40h-40v-40Z"></path>
 
-      <!-- this is also valid -->
-      <rect width="20" height="30"/>
+  <!-- this is also valid -->
+  <rect width="20" height="30"/>
 
-    </svg>
+</svg>
   ```
 
 ### Links in Inline SVG
