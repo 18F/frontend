@@ -14,10 +14,19 @@ low-level `document.registerElement()` API.
 3. The API does exactly what the [spec][custom elements v1] says it should,
    and nothing more. No two-way data binding, no event delegation, no
    performance-hobbling shadow DOM shims (or shams).
+1. Chrome added native support for `document.registerElement()` in [version
+   33](https://www.chromestatus.com/features/4642138092470272) (released
+   February, 2014). This means that you can test the technology more with a
+   stable, native implementation first, then compare the results of your test
+   with polyfilled browsers.
 
-> Verdict: **Use this! It works great!**
+> **Use this! It works great!** And though the ["v1" API has already
+> been deprecated][custom elements v2], theis polyfill is simple enough that
+> it _should_ contiunue working even after Chrome sunsets
+> `document.registerElement()`.
 
 [aight]: https://github.com/shawnbot/aight
 [custom elements v1]: https://www.w3.org/TR/2016/WD-custom-elements-20160226/
+[custom elements v2]: https://www.w3.org/TR/custom-elements/
 [document-register-element]: https://github.com/WebReflection/document-register-element
 [dom4]: https://github.com/WebReflection/dom4

@@ -3,7 +3,7 @@ title: Polyfills
 ---
 
 * [document-register-element] is a very lightweight (3K gzipped!) polyfill for
-  the [v1 custom elements] API (`document.registerElement()`). See the
+  the [custom elements v1] API (`document.registerElement()`). See the
   [custom elements guide](#custom-elements) for some usage examples.
 * [webcomponents.js] is Google's polyfill suite that provides support for
   [HTML templates](#html-templates), [custom elements](#custom-elements),

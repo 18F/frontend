@@ -36,6 +36,9 @@
   children:
     - id: web-component-frameworks
     - id: web-component-polyfills
+    - id: html-templates
     - id: custom-elements
+    - id: html-imports
+    - id: shadow-dom
 
 - id: contributing
