@@ -15,12 +15,16 @@ AngularJS (commonly referred to as "Angular") is an open-source web application 
 - When the whole site will be built with Angular to maintain front end code consistency.
 
 #### When not to use:
-- For a single or a few simple components (with the rest of the site not using Angular), instead see React or Web Components.
+- For a single or a few simple components (with the rest of the site not using
+  Angular), instead see React or [Web Components](#web-components).
 - Exporting a module that isn't an Angular module.
-- If there is a strict requirement that the site should work for users that have JavaScript disabled.
-- If there already is an active M**V framework (Backbone, ampersand, Ember) being used on the site.
+- If there is a requirement that the site should work for users that have
+  JavaScript disabled.
+- If there already is an active MVC or MVC-like framework (Backbone,
+  ampersand, Ember) being used on the site.
 - When the site's design doesn't benefit from a single page app architecture.
-- When the long-term maintenance dev team is very unfamiliar with Angular and don't have the resources to learn or hire for it.
+- When the long-term maintenance dev team is very unfamiliar with Angular and
+  don't have the resources to learn or hire for it.
 
 #### Pros:
 - Takes care of a lot of boilerplate code for front end interactions.
