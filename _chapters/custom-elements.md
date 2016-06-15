@@ -21,8 +21,8 @@ low-level `document.registerElement()` API.
    with polyfilled browsers.
 
 > **Use this! It works great!** And though the ["v1" API has already
-> been deprecated][custom elements v2], theis polyfill is simple enough that
-> it _should_ contiunue working even after Chrome sunsets
+> been deprecated][custom elements v2], this polyfill is simple enough that it
+> _should_ contiunue working even after Chrome sunsets
 > `document.registerElement()`.
 
 [aight]: https://github.com/shawnbot/aight
