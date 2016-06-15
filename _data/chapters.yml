@@ -1,6 +1,7 @@
 # Table of Contents
 - id: intro
 - id: what-is-frontend
+
 - id: concepts
   children:
     - id: progressive-enhancement
@@ -8,7 +9,9 @@
     - id: web-standards
     - id: style-guides
     - id: frameworks
+
 - id: html
+
 - id: css
   children:
     - id: css-linting
@@ -22,6 +25,7 @@
     - id: css-specificity
     - id: css-variables
     - id: css-documentation
+
 - id: javascript
   children:
     - id: js-dependencies
@@ -29,4 +33,9 @@
     - id: js-frameworks
 
 - id: web-components
+  children:
+    - id: web-component-frameworks
+    - id: web-component-polyfills
+    - id: custom-elements
+
 - id: contributing
