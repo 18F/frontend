@@ -5,10 +5,11 @@ slug: js-dependencies
 The word "dependency" refers to all of the frameworks, libraries, and other tools that your project relies on. *Dependency management* is the process by which tools are incorporated into your project, removed and updated (for instance, when you need a new version of [jQuery]). Here are the tools that we recommend for managing dependencies:
 
 ## Bower
-__Do not use Bower.__
+> __Do not use Bower.__
 
-It's not needed and should be phased out and replaced by npm. More information can be found here: [Why We Should Stop Using Bower – And How to Do It](http://gofore.com/ohjelmistokehitys/stop-using-bower/).
-
+It's not needed and should be phased out and replaced by npm. More information
+can be found here: [Why We Should Stop Using Bower – And How to Do
+It](http://gofore.com/ohjelmistokehitys/stop-using-bower/).
 
 ## npm
 [npm] informally stands for *N*ode *P*ackage *M*anager, and is the package manager node uses. Its usage is very similar to Bower because the latter was inspired by the former.
