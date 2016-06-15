@@ -3,6 +3,12 @@
 
 @import "guides_style_18f";
 
+$black: #000;
+$blue: #006fc9;
+$dark-gray: #666;
+$light-gray: #f9f9f9;
+$medium-gray: #999;
+
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
@@ -59,7 +65,7 @@ h6,
 nav a[aria-active=true]:link {
   background: transparent;
   // XXX this isn't turning links black for me...
-  color: #000;
+  color: $black;
   font-weight: bold;
 }
 
@@ -67,7 +73,7 @@ nav a[aria-active=true]:link {
 section:target > h1,
 h2:target,
 h3:target {
-  border-left: 4px solid #1188ff;
+  border-left: 4px solid $blue;
   padding-left: 10px;
 }
 
@@ -83,7 +89,7 @@ pre {
 }
 
 .anchorjs-link {
-  color: #999;
+  color: $medium-gray;
 }
 
 nav .group {
@@ -188,5 +194,44 @@ nav .group {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+  }
+}
+
+// better blockquote styles
+blockquote {
+  background: $light-gray;
+  color: $dark-gray;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  border-left: 4px solid;
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 1em;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+
+  // uniform padding on all cells
+  td,
+  th {
+    padding: .2em .5em;
+    vertical-align: top;
+  }
+
+  // don't wrap the first cell
+  td:first-child {
+    white-space: nowrap;
+  }
+
+  // tiger stripes
+  tbody tr:nth-child(even) > * {
+    background: $light-gray;
   }
 }
