@@ -17,6 +17,7 @@ exclude:
   - LICENSE.md
   - README.md
   - go
+  - vendor
 
 collections:
   - chapters
