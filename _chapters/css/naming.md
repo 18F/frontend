@@ -165,8 +165,7 @@ abbreviated syntax.
 ```
 
 
-
-#### Resources
+### Naming methodology resources
 - [article explaining BEM][mindbemding]
 - [BEM website][BEM]
 
