@@ -9,36 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+    {% include header.html %}
 
-      <header role="banner">
-        <div class="wrap">
-          <h1 class="site-title">
-            {{ site.title }}
-          </h1>
+      <div class="usa-grid">
 
-          <div class="back-link"><a href="https://pages.18f.gov/guides/">&laquo; Read more 18F Guides</a></div>
-        </div><!-- /.wrap -->
-      </header>
-
-      <div class="wrap content">
-
-        <main id="main" class="main-content">
+        {% include sidebar.html %}
+        <main id="main" class="usa-width-two-thirds usa-layout-docs-main_content" role="main">
           {{ content }}
         </main>
 
-        <aside>
-          {% if site.intro %}
-          <p class="intro">{{ site.introduction }}</p>
-          {% endif %}
-          <nav class="sidebar-nav js-sticky" role="navigation">
-            <ol>
-              {% include loop-nav.html chapters=site.data.chapters %}
-            </ol>
-          </nav>
-        </aside>
-
-      </div><!-- /.wrap.content -->
+      </div><!-- /.usa-grid -->
 
     </div><!-- /.container -->
   </body>

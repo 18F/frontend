@@ -1,0 +1,10 @@
+<aside class="usa-width-one-third usa-layout-docs-sidenav js-sticky">
+    {% if site.intro %}
+    <p class="intro">{{ site.introduction }}</p>
+    {% endif %}
+    <nav role="navigation">
+      <ol data-gumshoe class="usa-sidenav-list">
+        {% include loop-nav.html chapters=site.data.chapters %}
+      </ol>
+    </nav>
+</aside>

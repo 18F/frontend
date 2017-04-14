@@ -1,15 +1,20 @@
 {% for node in include.chapters %}
 {% assign chapter = site.chapters | where: 'slug', node.id | first %}
 {% if chapter.enabled == false %}{% continue %}{% endif %}
-<li class="group">
-  <a href="#{{ chapter.slug }}">{{ chapter.title }}</a>
   {% if node.children %}
-    <button class="expand-subnav"
+  <li class="usa-accordion">
+    <button class="usa-accordion-button"
       aria-expanded="false"
-      aria-controls="nav-collapsible-{{ chapter.slug }}">+</button>
-    <ol class="nav-children" id="nav-collapsible-{{ chapter.slug }}" aria-hidden="true">
+      aria-controls="nav-collapsible-{{ chapter.slug }}">
+        {{ chapter.title }}
+      </button>
+    <ol class="nav-children usa-accordion-content" id="nav-collapsible-{{ chapter.slug }}" aria-hidden="true">
       {% include loop-nav.html chapters=node.children %}
     </ol>
+  </li>
+  {% else %}
+  <li>
+    <a href="#{{ chapter.slug }}">{{ chapter.title }}</a>
+  </li>
   {% endif %}
-</li>
 {% endfor %}

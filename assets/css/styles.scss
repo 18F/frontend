@@ -1,12 +1,13 @@
 ---
 ---
-
-@import "guides_style_18f";
+/*@import "guides_style_18f";*/
 
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
+
+$wds-blue: #0071bc;
 
 html {
   font-size: 10px;
@@ -59,15 +60,15 @@ h6,
 nav a[aria-active=true]:link {
   background: transparent;
   // XXX this isn't turning links black for me...
-  color: #000;
-  font-weight: bold;
+  /*color: #000;*/
+  /*font-weight: bold;*/
 }
 
 // add the nav active indicator to targeted section titles
 section:target > h1,
 h2:target,
 h3:target {
-  border-left: 4px solid #1188ff;
+  border-left: 4px solid $wds-blue;
   padding-left: 10px;
 }
 
@@ -189,4 +190,41 @@ nav .group {
     position: sticky;
     top: 0;
   }
+}
+
+
+/**********************************
+ * SIDENAV ACCORDION WDS OVERRIDES*
+ **********************************/
+.usa-sidenav-list {
+  .usa-accordion-button {
+    background-color: initial;
+    padding: 0.85rem 1rem 0.85rem 1.8rem;
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+  a {
+    &.active {
+      border-left: 4px solid $wds-blue;
+      color: $wds-blue;
+      font-weight: 700;
+      padding-left: 1.4rem;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.usa-accordion+.usa-accordion {
+  margin-top: 0;
 }
