@@ -5,6 +5,14 @@ layout: docs
 sidenav: js
 ---
 # Frameworks
+
+**We recommend using [React]() for projects when possible.** As a team, we enjoy using React because it has a strong component model, enables easy server side rendering, and faciliates debugging by making the UI elements a function of the application state. React is most akin to the "view layer" in an MVC (Model-View-Controller) architecture and is frequently used with some other libraries. In our projects, we tend to use:
+
+* [Redux](https://www.npmjs.com/package/redux) for managing state
+* [Webpack](https://www.npmjs.com/package/webpack) and [Babel](https://babeljs.io/) for compiling our Javascript
+
+However, we are not dogmatic about React - we just vastly prefer it. Here are some other popular frameworks that have been used at 18F and some of their key characteristics.
+
 ## Angular
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
@@ -63,50 +71,3 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 - Designed primarily for REST data.
 
 
-## React
-React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for creating user interfaces that aims to address challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))).
-
-#### When to use:
-- Single page apps that requires data manipulation on the front end without a server side request/response architecture.
-- When there's a strong need to render JavaScript based UI on the server due to performance or accessibility reasons.
-- JavaScript UI that incorperates many nested components.
-- A UI with many components and updates that needs to be performance conscious.
-- When only a "view" framework is desired/required.
-- To ensure all front end components conform to a single standard.
-
-#### When not to use:
-- When a complex build process is not feasible. React requires transforming "jsx" files to regular JavaScript.
-- When developers unfamiliar with JSX and don't have time to learn.
-- While open source, is maintained primarily by Facebook.
-
-
-## Flux
-Flux is not a framework, nor is it M**VC. It's a software architecture for
-writing complex single page applications.
-
-#### When to use:
-- A complex JavaScript app that requires both viewing and modifying (CRUD) data
-  in a UI rendered on the client. Flux will likely be overkill for apps that
-  don't modify data in any way.
-- When the data service for the front end is REST and/or something besides REST,
-  such as Websockets.
-- An app thats data flow has grown or will grow overly complex.
-
-#### When not to use:
-- Applications that don't require any updating (create, update, delete) of data.
-- When the cost of updating an app's architecture to flux is more than the cost
-  of writing the software as it exists.
-
-#### Pros:
-- Easily add non-REST services to a front end, in a transparent way.
-- Cleans up complex data flow by using uni-directional data flow.
-- Cleans up complex async behavior and nested callbacks by using an evented
-  system and functionality to wait for data.
-- Can use simple JavaScript objects rather than a complex framework.
-- Easily tie components together in a clean way.
-- Requires little 3rd party software.
-
-#### Cons:
-- More verbose in file and directory structure.
-- Finding best way to use can be difficult for beginners.
-- Can be hard to find a good structure when beginning.
