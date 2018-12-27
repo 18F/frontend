@@ -8,6 +8,10 @@ A site's architecture should be based on its goals and purposes. This means the
 guidance here should be adapted to different sites and situations.
 
 ## Modular or component architecture
+Modular CSS (not to be confused with
+[CSS Modules](https://css-tricks.com/css-modules-part-1-need/)) is the
+recommended default at 18F.
+
 When using a modular or component architecture, every page is broken into a
 series of modular components. There are two sets of these components:
 `components` and `modules`. The architecture starts out with basic HTML element
@@ -15,9 +19,11 @@ rules: HTML, p, a, form, etc tags that than have components and modules written
 on top of them. Components are very basic structure such as buttons, blurbs,
 navs, and positioning structures like insets, island, and enclosure.  From
 here, modules are built with these components. This architecture also attempts
-to keep the specificity trend in an upwards curve as you move down in the file
-(more on this to come).
+to keep the specificity trend in an upwards curve as you move down in the file.
 
+[Here is a good overview of how to think about and apply modular CSS.](https://spaceninja.com/2018/09/17/what-is-modular-css/)
+
+### Best practices for implementing modular CSS
 - Start with an elements file for all tag rules (a, h1-h5, p, \*, html, body).
 - Create component files for each structural element, such as buttons, navs,
   etc. These are mainly class-based and use [BEM] or another [naming
@@ -32,7 +38,10 @@ to keep the specificity trend in an upwards curve as you move down in the file
   - A good thing to put here are breakpoint-specific rules, such as hiding
     something at small breakpoints.
 
-### File structure
+### Example file structure
+
+Here's how you might see a modular system organized:
+
 ```sh
 _elements.scss
 _mixins.scss
@@ -67,10 +76,12 @@ util/_clearfix.scss
 ```
 
 
-## Importing
+### Using Sass imports for modular architecture
 As you likely know, CSS rules that are later in the file override earlier
 rules. This means Sass imports can be used to control inheritance and
 specificity.
+
+#### Best practices for imports
 
 - Start with base elements.
 - Move to single nested classes and utils.
@@ -78,6 +89,8 @@ specificity.
 - Move next to overrides, possibly with !important rules.
 - Import alphabetically.
 - Only modify import order for groups of files, not specific files.
+
+#### Example structures
 
 ```scss
 // Bad
