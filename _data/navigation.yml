@@ -16,28 +16,29 @@ secondary:
     external: true
 
 css:
-  - text: Architecture
+  - text: CSS architecture
     href: /css/architecture/
-  - text: Documentation
-    href: /css/documentation/
-  - text: Frameworks
+  - text: Choosing a framework
     href: /css/frameworks/
-  - text: Formatting
-    href: /css/formatting/
-  - text: Inheritance
-    href: /css/inheritance/
-  - text: Linting
-    href: /css/linting/
-  - text: Naming
-    href: /css/naming/
-  - text: Preprocessors
+  - text: Documenting your code
+    href: /css/documentation/
+  - text: Using CSS preprocessors
     href: /css/preprocessors/
-  - text: Specificity
-    href: /css/specificity/
-  - text: Units
-    href: /css/units/
-  - text: Variables
-    href: /css/variables/
+  - text: 18F CSS style guide
+    - text: Linting
+      href: /css/linting/
+    - text: Formatting
+      href: /css/formatting/
+    - text: Naming
+      href: /css/naming/
+    - text: Specificity
+      href: /css/specificity/
+    - text: Units
+      href: /css/units/
+    - text: Variables
+      href: /css/variables/
+    - text: Sass inheritance
+      href: /css/inheritance/
 
 js:
   - text: Dependencies
