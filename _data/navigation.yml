@@ -26,20 +26,20 @@ css:
     href: /css/preprocessors/
   - text: 18F CSS style guide
     links:
-    - text: Linting
-      href: /css/linting/
-    - text: Formatting
-      href: /css/formatting/
-    - text: Naming
-      href: /css/naming/
-    - text: Specificity
-      href: /css/specificity/
-    - text: Units
-      href: /css/units/
-    - text: Variables
-      href: /css/variables/
-    - text: Sass inheritance
-      href: /css/inheritance/
+      - text: Linting
+        href: /css/linting/
+      - text: Formatting
+        href: /css/formatting/
+      - text: Naming
+        href: /css/naming/
+      - text: Specificity
+        href: /css/specificity/
+      - text: Units
+        href: /css/units/
+      - text: Variables
+        href: /css/variables/
+      - text: Sass inheritance
+        href: /css/inheritance/
 
 js:
   - text: Dependencies
