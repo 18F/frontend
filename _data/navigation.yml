@@ -25,7 +25,7 @@ css:
   - text: Using CSS preprocessors
     href: /css/preprocessors/
   - text: 18F CSS style guide
-    children:
+    links:
     - text: Linting
       href: /css/linting/
     - text: Formatting
