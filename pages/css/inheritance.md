@@ -3,10 +3,17 @@ title: Inheritance
 permalink: /css/inheritance/
 sidenav: css
 ---
-# Inheritance
+# Working with inheritance in Sass
+
+Two commonly used Sass features are [mixins and inheritance](https://sass-lang.com/guide)
+(the @extend directive). These are very powerful if used correctly; however,
+@extend in particular can bloat your stylesheets if used too liberally.
+
 ## Mixins
-- Use mixins for groups of properties that appear together intentionally and
-  are used multiple times.
+
+Mixins are helpful for decreasing the amount of repetitive code you need to write.
+For instance, if you want to create a clearfix that can be added to other classes
+easily, you could create a clearfix mixin:
 
   ```scss
   @mixin clearfix {
@@ -18,8 +25,23 @@ sidenav: css
   }
   ```
 
+You can then use the mixin in other classes, without having to rewrite the rules:
+  ```scss
+  .media-block {
+    @include clearfix;
+    ...
+  }
+  ```
+
+Mixins can also take parameters.
+
+For further guidance, see the [Sass documentation](https://sass-lang.com/guide).
+
+### When to use mixins
+
+- Use mixins for groups of properties that appear together intentionally and are used multiple times.
 - Use mixins for components to change size.
-- Use mixins when something requires parameters.
+- Use mixins when a repeatable pattern requires parameters. For example:
 
   ```scss
   @mixin size($width, $height: $width) {
@@ -28,20 +50,18 @@ sidenav: css
   }
   ```
 
-- Do not use mixins for browser prefixes. Use [Autoprefixer](https://github.com/postcss/autoprefixer).
-
-  ```scss
-  // Bad
-  @mixin transform($value) {
-    -webkit-transform: $value;
-    -moz-transform: $value;
-    transform: $value;
-  }
-  ```
+### When not to use mixins
+Do not use mixins for browser prefixes. Use [Autoprefixer](https://github.com/postcss/autoprefixer).
 
 
 ## Extend
-Be very careful with using `@extend`. It's a powerful tool that can have
+Any Sass selector can be extended. However, because `@extend` copies all of
+the rules from one selector to another, it can cause a great deal of unintentional
+CSS bloat when the CSS is compiled. Sass has the concept of [placeholder classes],
+which help reduce unforeseen side effects. The Sass documentation has
+[helpful information about using `@extend`](http://sass-lang.com/guide).
+
+Be very careful and deliberate when using `@extend`. It's a powerful tool that can have
 disastrous side-effects. Before using please consider:
 
 - Where is my current selector going to be appended?
@@ -52,12 +72,12 @@ If you're unsure of using `@extend`, follow these rules to avoid running into
 trouble:
 
 - Use `@extend` from within a module, not across different modules.
-- Use `@extend` on [placeholders] exclusively, not on actual selectors.
-- Make sure the placeholder you extend is present as little as possible in the
+- Use `@extend` on placeholder classes exclusively, not on actual selectors.
+- Make sure the placeholder class you extend is present as little as possible in the
   stylesheet.
 
 You can use [mixins] in place of selectors. While mixins will copy more code,
 the difference will often be negligible once the output file has been gzipped.
 
 [mixins]: http://sass-lang.com/guide#mixins
-[placeholders]: http://thesassway.com/intermediate/understanding-placeholder-selectors
+[placeholder classes]: http://thesassway.com/intermediate/understanding-placeholder-selectors
