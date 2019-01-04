@@ -24,22 +24,23 @@ css:
     href: /css/documentation/
   - text: Using CSS preprocessors
     href: /css/preprocessors/
+  - text: Recommended linting techniques
+    href: /css/linting/
+  - text: Using @mixin and @extend in Sass
+    href: /css/inheritance/
   - text: 18F CSS style guide
+    href: /css/styleguide/
     links:
-      - text: Linting
-        href: /css/linting/
       - text: Formatting
-        href: /css/formatting/
+        href: /css/styleguide/formatting/
       - text: Naming
-        href: /css/naming/
+        href: /css/styleguide/naming/
       - text: Specificity
-        href: /css/specificity/
+        href: /css/styleguide/specificity/
       - text: Units
-        href: /css/units/
+        href: /css/styleguide/units/
       - text: Variables
-        href: /css/variables/
-      - text: Sass inheritance
-        href: /css/inheritance/
+        href: /css/styleguide/variables/
 
 js:
   - text: Dependencies
