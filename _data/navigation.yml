@@ -26,7 +26,7 @@ css:
     href: /css/preprocessors/
   - text: Recommended linting techniques
     href: /css/linting/
-  - text: Using @mixin and @extend in Sass
+  - text: Inheritance in Sass
     href: /css/inheritance/
   - text: 18F CSS style guide
     href: /css/styleguide/
