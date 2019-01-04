@@ -8,7 +8,7 @@ The style guide provides a method of linting [Sass] code to ensure it conforms
 to the rules in the style guide. This linting tool will go through all Sass code
 and issue warnings wherever the code differs from the style guide. We've created
 a specific [`.scss-lint.yml` file][scss-lint yaml] that's configured to work
-with the CSS style guide. There are three ways to setup linting:
+with the specifications of the CSS style guide. There are three ways to set up linting:
 
 * on GitHub with Hound
 * locally with Ruby
@@ -33,7 +33,7 @@ with the CSS style guide. There are three ways to setup linting:
 
 ## Shortcomings
 
-### scss-lint
+### [scss-lint](https://github.com/brigade/scss-lint)
 
 The scss-lint tool currently lacks the functionality to check these rules in
 the CSS coding styleguide:
