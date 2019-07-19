@@ -4,6 +4,14 @@ permalink: /javascript/frameworks/
 sidenav: js
 ---
 # Frameworks
+
+**We recommend using [React]() for projects when possible.** As a team, we enjoy using React because it has a strong component model, enables easy server side rendering, and faciliates debugging by making the UI elements a function of the application state. React is most akin to the "view layer" in an MVC (Model-View-Controller) architecture and is frequently used with some other libraries. In our projects, we tend to use:
+
+* [Redux](https://www.npmjs.com/package/redux) for managing state
+* [Webpack](https://www.npmjs.com/package/webpack) and [Babel](https://babeljs.io/) for compiling our Javascript
+
+However, we are not dogmatic about React - we just vastly prefer it. Here are some other popular frameworks that have been used at 18F and some of their key characteristics.
+
 ## Angular
 AngularJS (commonly referred to as "Angular") is an open-source web application framework maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications ([Wikipedia](http://en.wikipedia.org/wiki/AngularJS)).
 
@@ -60,7 +68,6 @@ Backbone.js is a JavaScript library with a RESTful JSON interface and is based o
 - Still requires a lot of boilerplate code (this can be mitigated by pairing with a library like Marionette)
 - Since it has very little structure, inexperienced programmers can easily create unmaintainable code with Backbone.
 - Designed primarily for REST data.
-
 
 ## React
 React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for creating user interfaces that aims to address challenges encountered in developing single-page applications ([Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))).
