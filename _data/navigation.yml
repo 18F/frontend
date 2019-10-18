@@ -26,8 +26,6 @@ css:
     href: /css/formatting/
   - text: Inheritance
     href: /css/inheritance/
-  - text: Linting
-    href: /css/linting/
   - text: Naming
     href: /css/naming/
   - text: Preprocessors
