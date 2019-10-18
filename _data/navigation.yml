@@ -9,7 +9,6 @@ primary:
   - text: Security
     href: /security/
 
-
 secondary:
   - text: More 18F guides
     href: https://guides.18f.gov/
@@ -46,7 +45,7 @@ js:
     href: /javascript/frameworks/
   - text: Libraries
     href: /javascript/libraries/
-  - text: Style / Linting
+  - text: Style
     href: /javascript/style/
 
 security:
